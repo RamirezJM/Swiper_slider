@@ -1,0 +1,122 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Gentium Plus", serif;
+}
+
+
+
+header {
+	padding: 1em;
+	
+}
+
+header h1 {
+	text-align: center;
+	font-size: 2rem;
+
+}
+
+.swiper{
+  width: 90%;
+  margin: 0 auto;
+}
+.swiper-slide>img{
+  width: 100%;
+}
+main { 
+	padding: 2em;
+}
+
+section { padding: 20px 10px; }
+
+.column, .double { padding: 0 10px; }
+
+footer {
+	margin: 0 20px;
+	padding: 40px;
+	background: #E8E8E8;
+}
+
+/************* Typography ************/
+
+h1, h2{ 
+	
+	font-size: 24px;
+	margin-bottom: 1em;
+	text-transform: uppercase;
+}
+
+p { 
+	line-height: 1.4em;
+	margin-bottom: 1em;
+}
+
+footer p { 
+	margin-bottom: 0;
+	text-align: center;
+}
+
+
+/*ajustes al flexslider*/
+
+
+.cta{
+  display: flex;
+  align-items: center;
+  height: 25vh;
+  width: 25vw;
+
+  position: absolute;
+  right: 20px;
+  bottom: 100%;
+
+  background: rgba(123, 157, 179, .3);
+  border-radius: 50%;
+  border: 5px solid #084d64;
+
+  text-align: center;
+  padding: 20px;
+  text-decoration: none;
+
+  font-size: 4vw;
+  color: #03425b;
+}
+.light{
+  color: #ededed;
+}
+
+
+
+
+
+/**************** Media Queries ****************/
+@media only screen and (min-width: 600px) {
+	
+	main { display: flex; }
+
+	.column { flex: 1; }
+  .cta{
+    height: 20vh;
+    width: 20vw;
+    font-size: 3vw;
+  }
+	
+}
+
+@media only screen and (min-width: 1000px) {
+	
+	#page {
+		max-width: 1000px;
+		margin: auto;
+	}
+
+	header h1 {font-size: 120px;}
+  .cta{
+    height: 150px;
+    width: 150px;
+    font-size: 24px;
+  }
+}
+
