@@ -5,104 +5,73 @@
   font-family: "Gentium Plus", serif;
 }
 
-
-
 header {
 	padding: 1em;
-	
+  background-color: #fdf0d5;
 }
 
-header h1 {
+h1 {
 	text-align: center;
 	font-size: 2rem;
-
 }
 
 .swiper{
   width: 90%;
   margin: 0 auto;
 }
+.swiper-slide{
+ 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .swiper-slide>img{
   width: 100%;
 }
+
 main { 
-	padding: 2em;
+	width: 90%;
+  margin: 0 auto;
+  padding-block: 1em;
 }
 
-section { padding: 20px 10px; }
-
-.column, .double { padding: 0 10px; }
+.column{
+  padding: 1em;
+}
 
 footer {
-	margin: 0 20px;
-	padding: 40px;
+	text-align: center;
+	padding: 1em;
 	background: #E8E8E8;
 }
 
-/************* Typography ************/
-
-h1, h2{ 
-	
-	font-size: 24px;
-	margin-bottom: 1em;
-	text-transform: uppercase;
-}
-
-p { 
-	line-height: 1.4em;
-	margin-bottom: 1em;
-}
-
-footer p { 
-	margin-bottom: 0;
-	text-align: center;
-}
-
-
-/*ajustes al flexslider*/
 
 
 .cta{
-  display: flex;
-  align-items: center;
-  height: 25vh;
-  width: 25vw;
-
-  position: absolute;
-  right: 20px;
-  bottom: 100%;
-
-  background: rgba(123, 157, 179, .3);
-  border-radius: 50%;
+  background: rgba(123, 157, 179, .8);
+  border-radius: 20px;
   border: 5px solid #084d64;
-
+  margin-top: -50px;
+  z-index: 100;
   text-align: center;
-  padding: 20px;
+  padding: .5em;
   text-decoration: none;
-
-  font-size: 4vw;
+  align-self: flex-end;
   color: #03425b;
+  font-weight: 600;
 }
-.light{
-  color: #ededed;
-}
-
-
-
-
 
 /**************** Media Queries ****************/
 @media only screen and (min-width: 600px) {
-	
-	main { display: flex; }
 
+  h1{font-size: 2.5rem;}
+	main { display: flex; }
 	.column { flex: 1; }
   .cta{
-    height: 20vh;
-    width: 20vw;
-    font-size: 3vw;
+    font-size: 1.5rem;
+    margin-top: -100px;
   }
-	
 }
 
 @media only screen and (min-width: 1000px) {
@@ -112,11 +81,4 @@ footer p {
 		margin: auto;
 	}
 
-	header h1 {font-size: 120px;}
-  .cta{
-    height: 150px;
-    width: 150px;
-    font-size: 24px;
-  }
 }
-
